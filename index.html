@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radio City - Eighty Five · Events</title>
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -12,8 +12,8 @@
     <header class="radio-status-header">
       <div class="header-left">
         <div class="lang-switch" aria-label="Sprache wählen / Choose language">
-          <button id="lang-de" title="Deutsch" aria-label="Deutsch">🇩🇪</button>
-          <button id="lang-en" title="English" aria-label="English">🇬🇧</button>
+          <button id="lang-de" title="Deutsch">🇩🇪</button>
+          <button id="lang-en" title="English">🇬🇧</button>
         </div>
         <div class="radio-title">
           <div class="equalizer"><span></span><span></span><span></span><span></span></div>
@@ -30,12 +30,16 @@
     <h1 id="main-headline">Kommende Events</h1>
 
     <!-- Event Grid -->
-    <div class="event-container" id="event-container"></div>
+    <div class="event-container" id="event-container">
+      <!-- Dynamisch von script.js befüllt -->
+    </div>
 
     <!-- Footer -->
-    <footer id="footer-text">© 2025 Radio City - Eighty Five · Alle Angaben ohne Gewähr</footer>
+    <footer id="footer-text">
+      © 2025 Radio City - Eighty Five · Alle Angaben ohne Gewähr
+    </footer>
   </div>
 
-  <script src="update.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
