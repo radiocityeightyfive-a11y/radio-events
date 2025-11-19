@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio City - Eighty Five · Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Hier kommt dein kompletter Style aus deinem ursprünglichen Code rein */
+    body { font-family:'Poppins',sans-serif; margin:0; padding:0; background:#fff; color:#333; }
+    .container { max-width:1300px; margin:30px auto; background:#fff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); overflow:hidden; border:1px solid #ddd; padding-bottom:20px; }
+    /* … alle CSS Regeln wie gehabt … */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="radio-status-header">
+      <div class="header-left">
+        <div class="lang-switch" aria-label="Sprache wählen / Choose language">
+          <button id="lang-de" title="Deutsch" aria-label="Deutsch">🇩🇪</button>
+          <button id="lang-en" title="English" aria-label="English">🇬🇧</button>
+        </div>
+        <div class="radio-title">
+          <div class="equalizer"><span></span><span></span><span></span><span></span></div>
+          <span id="header-title">🎤 Radio City - Eighty Five · Events</span>
+          <div class="audio-waves"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="live-badge" id="badge-text">Events</div>
+      </div>
+    </header>
+
+    <h1 id="main-headline">Kommende Events</h1>
+    <div class="event-container" id="event-container"></div>
+    <footer id="footer-text">© 2025 Radio City - Eighty Five · Alle Angaben ohne Gewähr</footer>
+  </div>
+
+  <script src="update.js"></script>
+</body>
+</html>
 
